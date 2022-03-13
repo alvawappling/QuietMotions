@@ -4,17 +4,42 @@ using UnityEngine;
 
 public class FlowerTrail : MonoBehaviour{
 
-    public float timeBtwSpawns;
-    public float startTimeBtwSpawns;
+    private float timeBtwSpawns;
+    [SerializeField] private float startTimeBtwSpawns;
 
-    public GameObject echo;
-        
+    [SerializeField] private GameObject[] flowerList;
+
+    private float currentPosY;
+    private float currentPosX;
+    private float scaleFactor;
+
+    private GameObject echo;
+
+
     void Update(){
 
         if(timeBtwSpawns <= 0){
-            // spawn echo game object
-            Instantiate(echo, transform.position, Quaternion.identity);
-            timeBtwSpawns = startTimeBtwSpawns;
+            echo = flowerList[Random.Range(0, flowerList.Length)];
+
+
+            currentPosY = transform.position.y + Random.Range(-0.5f, 0.5f);
+            currentPosX = transform.position.x + Random.Range(-0.5f, 0.5f);
+
+            GameObject flower = Instantiate(echo, new Vector3 (currentPosX, currentPosY, 0), Quaternion.identity);
+
+
+            scaleFactor = Random.Range(0.0375f, 0.075f);
+
+            Vector3 randomSize = new Vector3 (1,1,1) * scaleFactor;
+
+            flower.transform.localScale = randomSize;
+
+
+
+            timeBtwSpawns = startTimeBtwSpawns * Random.Range(0.2f, 0.8f);
+
+            //timeBtwSpawns = startTimeBtwSpawns;
+
         } else {
             timeBtwSpawns -= Time.deltaTime;
         }

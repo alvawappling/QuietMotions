@@ -954,7 +954,7 @@ PrefabInstance:
     - target: {fileID: 8023952611279514476, guid: be478db31f0f88b428ceadb3a8c2bc36,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8023952611279514476, guid: be478db31f0f88b428ceadb3a8c2bc36,
         type: 3}
@@ -1008,9 +1008,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
         type: 3}
-      propertyPath: echo
+      propertyPath: startTimeBtwSpawns
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[0]
       value: 
-      objectReference: {fileID: 6619563015871617609, guid: c7ec200179deab04089dfde6e6b48825,
+      objectReference: {fileID: 507810285330583924, guid: 47d30f0235ac7c44387d8e3be74e5485,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[1]
+      value: 
+      objectReference: {fileID: 5603164550985951890, guid: 9fbc9b9fc42105c4aae497cabf18638b,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[2]
+      value: 
+      objectReference: {fileID: 2749614614966485396, guid: 24da9a32d61c5024097c990651094931,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[3]
+      value: 
+      objectReference: {fileID: 2585768156900220408, guid: 8294efb4220527044bbbc00d21f6a2e2,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[4]
+      value: 
+      objectReference: {fileID: 8772169213397663149, guid: abcb672e4a063af48ab89e2cf83aa69a,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[5]
+      value: 
+      objectReference: {fileID: 328646214962630145, guid: 7d19100dd8024934b9c2a3f76193f1ee,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[6]
+      value: 
+      objectReference: {fileID: 732670733829940550, guid: 321f968558e590646b8a2247f07e95a4,
+        type: 3}
+    - target: {fileID: 8902477803508632135, guid: be478db31f0f88b428ceadb3a8c2bc36,
+        type: 3}
+      propertyPath: flowerList.Array.data[7]
+      value: 
+      objectReference: {fileID: 7060747179450731873, guid: 15169b269e76d5d4397a36543ce16d9b,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be478db31f0f88b428ceadb3a8c2bc36, type: 3}

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1820097097697832568}
   - component: {fileID: 9178413123980892103}
   - component: {fileID: 7720863425069579026}
+  - component: {fileID: 1384005639207242063}
   - component: {fileID: 3404210892015538634}
   - component: {fileID: 4955106713759001516}
-  - component: {fileID: 4532928653343228127}
   - component: {fileID: 6295044190028407350}
   m_Layer: 0
   m_Name: SpawnedVine
@@ -203,6 +203,29 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &1384005639207242063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675241486947730219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433413dc5fd9628419d00c5658929ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwSpawns: 0.8
+  flowerList:
+  - {fileID: 507810285330583924, guid: 47d30f0235ac7c44387d8e3be74e5485, type: 3}
+  - {fileID: 5603164550985951890, guid: 9fbc9b9fc42105c4aae497cabf18638b, type: 3}
+  - {fileID: 2749614614966485396, guid: 24da9a32d61c5024097c990651094931, type: 3}
+  - {fileID: 2585768156900220408, guid: 8294efb4220527044bbbc00d21f6a2e2, type: 3}
+  - {fileID: 7060747179450731873, guid: 15169b269e76d5d4397a36543ce16d9b, type: 3}
+  - {fileID: 732670733829940550, guid: 321f968558e590646b8a2247f07e95a4, type: 3}
+  - {fileID: 8772169213397663149, guid: abcb672e4a063af48ab89e2cf83aa69a, type: 3}
+  - {fileID: 328646214962630145, guid: 7d19100dd8024934b9c2a3f76193f1ee, type: 3}
+  echo: {fileID: 0}
 --- !u!114 &3404210892015538634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,21 +265,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4532928653343228127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3675241486947730219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433413dc5fd9628419d00c5658929ba9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBtwSpawns: 0
-  startTimeBtwSpawns: 1
-  echo: {fileID: 6619563015871617609, guid: c7ec200179deab04089dfde6e6b48825, type: 3}
 --- !u!58 &6295044190028407350
 CircleCollider2D:
   m_ObjectHideFlags: 0

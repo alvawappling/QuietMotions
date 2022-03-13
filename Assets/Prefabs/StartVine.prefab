@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBtwSpawns: 0
   startTimeBtwSpawns: 1
+  flowerList: []
   echo: {fileID: 0}
 --- !u!50 &2977665695486466130
 Rigidbody2D:
