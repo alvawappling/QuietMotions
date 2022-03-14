@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3675241486947730219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2181191, y: 8.547104, z: 0}
+  m_LocalPosition: {x: 2.548, y: 9.813, z: 0}
   m_LocalScale: {x: 0.010790972, y: 0.010790972, z: 0.010790972}
   m_Children: []
   m_Father: {fileID: 0}
@@ -137,30 +137,21 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.53736687
-        inSlope: 0
-        outSlope: 0
+        value: 0.5873699
+        inSlope: 0.30242038
+        outSlope: 0.30242038
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.41731513
-        value: 0.91304344
-        inSlope: 0.42619315
-        outSlope: 0.42619315
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.27161816
-        outWeight: 0
+        outWeight: 0.07482993
       - serializedVersion: 3
         time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        value: 0.7349976
+        inSlope: -0.04010568
+        outSlope: -0.04010568
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.12471658
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -168,7 +159,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.73176414, g: 0.8490566, b: 0.6047526, a: 1}
-      key1: {r: 0.40131065, g: 0.4433962, b: 0.29071733, a: 1}
+      key1: {r: 0.50353265, g: 0.5660378, b: 0.34442863, a: 1}
       key2: {r: 0.31127283, g: 0.3584906, b: 0.19108224, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -176,7 +167,7 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 6939
-      ctime1: 42212
+      ctime1: 65535
       ctime2: 60524
       ctime3: 0
       ctime4: 0
@@ -192,7 +183,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 3
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -225,7 +216,6 @@ MonoBehaviour:
   - {fileID: 732670733829940550, guid: 321f968558e590646b8a2247f07e95a4, type: 3}
   - {fileID: 8772169213397663149, guid: abcb672e4a063af48ab89e2cf83aa69a, type: 3}
   - {fileID: 328646214962630145, guid: 7d19100dd8024934b9c2a3f76193f1ee, type: 3}
-  echo: {fileID: 0}
 --- !u!114 &3404210892015538634
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -137,22 +137,13 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.53736687
-        inSlope: 0
-        outSlope: 0
+        value: 0.58736503
+        inSlope: 1.3116419
+        outSlope: 1.3116419
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.41731513
-        value: 0.91304344
-        inSlope: 0.42619315
-        outSlope: 0.42619315
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.27161816
-        outWeight: 0
+        outWeight: 0.120181404
       - serializedVersion: 3
         time: 1
         value: 1
@@ -233,10 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433413dc5fd9628419d00c5658929ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBtwSpawns: 0
   startTimeBtwSpawns: 1
   flowerList: []
-  echo: {fileID: 0}
 --- !u!50 &2977665695486466130
 Rigidbody2D:
   serializedVersion: 4
