@@ -10,7 +10,7 @@ public class VineScript : MonoBehaviour
     private int targetInput = 0;
     private float currentInput;
     public bool controlsAssigned = false;
-    private bool stopped;
+    public bool stopped;
     private VineManager VM;
 
     // Start is called before the first frame update
@@ -55,9 +55,10 @@ public class VineScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Screen") && targetInput == 0)
+        if (collision.gameObject.CompareTag("Screen"))
         {
             stopped = true;
+            VM.ChangeVine(this);
             VM.RemoveFromList(this);
         }
     }

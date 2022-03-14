@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpSpeed: 0.1
   rotationSpeed: 200
-  speed: 6
+  speed: 4
   toTheRight: 0
   toTheLeft: 0
   controlsAssigned: 0

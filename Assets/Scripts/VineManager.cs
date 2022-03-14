@@ -33,6 +33,9 @@ public class VineManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.HasEnded)
+            return;
+
         if (Input.anyKeyDown)
         {
             AssignKey();
@@ -84,6 +87,25 @@ public class VineManager : MonoBehaviour
             currentVine.name = "Vine_" + spawnedVines;
             camScript.currentVine = currentVine.gameObject;
             StartCoroutine(BranchVine());
+        }
+    }
+
+    public void ChangeVine(VineScript outVine)
+    {
+        if(vines.Count - 1 == 0)
+        {
+            GameManager.HasEnded = true;
+        }
+        else if(outVine == currentVine)
+        {
+            int randomVine = -1;
+            do
+            {
+                randomVine = Random.Range(0, vines.Count);
+                currentVine = vines[randomVine];
+                camScript.currentVine = currentVine.gameObject;
+            }while (outVine == vines[randomVine] || !currentVine.controlsAssigned) ;
+
         }
     }
 

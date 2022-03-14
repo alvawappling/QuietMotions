@@ -10,6 +10,8 @@ public class CameraScript : MonoBehaviour
     public GameObject currentVine;
     private Vector3 targetPos, currentPos;
 
+    [SerializeField] private float minX, maxX, minY, maxY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,16 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.HasEnded)
+            return;
+
         Vector3 targetPos = new Vector3(currentVine.transform.position.x, currentVine.transform.position.y, transform.position.z);
-        currentPos = Vector3.Slerp(currentPos, targetPos, 0.1f);
+        if(targetPos.y > minY && targetPos.y < maxY)
+            currentPos.y = Mathf.Lerp(currentPos.y, targetPos.y, 0.03f);
+
+        if(targetPos.x > minX && targetPos.x < maxX)
+            currentPos.x = Mathf.Lerp(currentPos.x, targetPos.x, 0.03f);
+
         transform.position = currentPos;
     }
 }
