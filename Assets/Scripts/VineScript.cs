@@ -59,7 +59,7 @@ public class VineScript : MonoBehaviour
         {
             stopped = true;
             VM.ChangeVine(this);
-            VM.RemoveFromList(this);
+            VM.RemoveFromList(this, toTheLeft, toTheRight);
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class GameManager : MonoBehaviour
     private bool gotPosition;
     private float targetSize = 36;
     private float currentSize;
+    [SerializeField] private GameObject resetBtn;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        HasEnded = false;
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
             {
                 camCurrentPos = Camera.main.transform.position;
                 currentSize = Camera.main.GetComponent<Camera>().orthographicSize;
+                resetBtn.SetActive(true);
                 gotPosition = true;
             }
             camCurrentPos = Vector3.Lerp(camCurrentPos, camTargetPos, 0.01f);
@@ -33,5 +35,15 @@ public class GameManager : MonoBehaviour
             currentSize = Mathf.Lerp(currentSize, targetSize, 0.005f);
             Camera.main.GetComponent<Camera>().orthographicSize = currentSize;
         }
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
